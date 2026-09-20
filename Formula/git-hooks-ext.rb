@@ -1,9 +1,9 @@
 class GitHooksExt < Formula
   desc "Semantic Git hooks for reference changes"
   homepage "https://github.com/ciembor/git-hooks-ext"
-  url "https://github.com/ciembor/git-hooks-ext/releases/download/v0.2.0/git-hooks-ext-0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "6004daf8653adfa87a4e298a9c713c79f8b30caedd67570023cd5eacbe0896cb"
+  url "https://github.com/ciembor/git-hooks-ext/releases/download/v0.3.0/git-hooks-ext-0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 "c3abc689e1c1e15f652ea5510aa7df58bcfdb9c1b54cce6f71244e0fd9baa9fa"
   license "GPL-2.0-only"
 
   uses_from_macos "git"
