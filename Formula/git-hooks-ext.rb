@@ -3,7 +3,7 @@ class GitHooksExt < Formula
   homepage "https://github.com/ciembor/git-hooks-ext"
   url "https://github.com/ciembor/git-hooks-ext/releases/download/v0.4.0/git-hooks-ext-0.4.0.tar.gz"
   version "0.4.0"
-  sha256 "759bda27347c9d6702843146fada0a5ac8971806ce0bb72bb3c683dc48fce6f5"
+  sha256 "f5e3d2302ace0b11797d926c081252cf30ffd19f7c78c694e64ad8e2b6059c54"
   license "GPL-2.0-only"
 
   uses_from_macos "git"
