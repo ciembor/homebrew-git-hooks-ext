@@ -1,9 +1,9 @@
 class GitHooksExt < Formula
   desc "Semantic Git hooks for reference changes"
   homepage "https://github.com/ciembor/git-hooks-ext"
-  url "https://github.com/ciembor/git-hooks-ext/releases/download/v0.4.0/git-hooks-ext-0.4.0.tar.gz"
-  version "0.4.0"
-  sha256 "07bee299ed4775198c4422a4975a068e09657fd3d571e97762d1e4e6d429e29a"
+  url "https://github.com/ciembor/git-hooks-ext/releases/download/v0.5.0/git-hooks-ext-0.5.0.tar.gz"
+  version "0.5.0"
+  sha256 "2e69cacb571fbc8da30ee30dd03e4ee3201ce3092a5afb7fa001e0f02fbe5530"
   license "GPL-2.0-only"
 
   uses_from_macos "git"
@@ -21,7 +21,7 @@ class GitHooksExt < Formula
     cd testpath/"repo" do
       system "git", "-c", "user.name=Package Test", "-c", "user.email=test@example.com",
              "commit", "--allow-empty", "-qm", "initial"
-      system bin/"git-hooks-ext", "install", "--legacy"
+      system bin/"git-hooks-ext", "install"
       hook = Pathname(".git/hooks/branch-created")
       hook.write "#!/bin/sh\nprintf '%s\\n' \"$1\" > branch.out\n"
       hook.chmod 0755
